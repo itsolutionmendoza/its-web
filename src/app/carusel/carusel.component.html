@@ -1,0 +1,28 @@
+<!-- carousel -->
+
+
+<div class="carousel-container">
+  <div class="carousel-slide" >
+    <img [src]="items[currentSlide].image" [alt]="items[currentSlide].title">
+  </div>
+
+  <!-- Controles -->
+  <button class="prev" (click)="prevSlide()">&#10094;</button>
+  <button class="next" (click)="nextSlide()">&#10095;</button>
+
+  <!-- Indicadores -->
+  <div class="indicators">
+    <span 
+      *ngFor="let item of items; let i = index" 
+      [class.active]="i === currentSlide"
+      (click)="selectSlide(i)">
+    </span>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Fin Carrusel -->

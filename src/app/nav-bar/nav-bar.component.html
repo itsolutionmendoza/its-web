@@ -1,0 +1,46 @@
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../../assets/img/MARCA_COLORPNG.webp" alt="Logo">
+    </div>
+
+    <!-- Links -->
+    <ul class="nav-links" [ngClass]="{ 'nav-active': navActive }">
+      <li><a class="nav-link" routerLink="home" routerLinkActive="active-link">Inicio</a></li>
+      
+      <!-- Dropdown Seguridad Electrónica -->
+      <li class="dropdown">
+        <a class="nav-link">Seguridad Electrónica ▾</a>
+        <ul class="dropdown-menu">
+          <li><a class="nav-link" routerLink="camaras" routerLinkActive="active-link">Videoseguridad</a></li>
+          <li><a class="nav-link" routerLink="alarmas" routerLinkActive="active-link">Alarmas</a></li>
+          <li><a class="nav-link" routerLink="control-acceso" routerLinkActive="active-link">Control de Acceso</a></li>
+        </ul>
+      </li>
+
+      <!-- Dropdown Informática -->
+      <li class="dropdown">
+        <a class="nav-link">Informática ▾</a>
+        <ul class="dropdown-menu">
+          <li><a class="nav-link" routerLink="service-pc" routerLinkActive="active-link">Servicio Técnico</a></li>
+          <li><a class="nav-link" routerLink="redes" routerLinkActive="active-link">Redes y Conectividad</a></li>
+          <li><a class="nav-link" routerLink="ventas" routerLinkActive="active-link">Computadores y componentes</a></li>
+        </ul>
+      </li>
+
+      <li><a class="nav-link" routerLink="contacto"
+          routerLinkActive="active-link">Contacto</a></li>
+
+   
+    </ul>
+
+    <!-- Botón hamburguesa -->
+    <div class="burger" (click)="toggleNav()">
+      <div [class.hidden]="navActive" class="line">-</div>
+      <div [class.hidden]="navActive" class="line">-</div>
+      <div [class.hidden]="navActive" class="line">-</div>
+      
+    </div>
+    <span (click)="toggleNav()" *ngIf="navActive" class="close-btn">×</span> 
+  </nav>
+

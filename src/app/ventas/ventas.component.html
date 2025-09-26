@@ -1,0 +1,82 @@
+<section class="control-container">
+
+    <div class="title-content">
+        <h2>Computadoras y Componentes</h2>
+    </div>
+
+    <section class="section">
+        <div class="text-content">
+            <h3>¿Qué ofrecemos?</h3>
+            <p>
+                Brindamos soluciones tecnológicas a medida: desde equipos de oficina confiables hasta 
+                potentes computadoras gamer y estaciones de trabajo optimizadas para programadores y diseñadores.  
+                También ofrecemos venta de partes y accesorios para actualizar o armar tu PC con el mejor rendimiento.
+            </p>
+        </div>
+
+        <ul class="qs-features" role="list">
+            <li>
+                <img src="../../assets/img/service-pc.webp" alt="Computadoras para oficina" />
+                <div>
+                    <strong>Equipos para Oficina</strong>
+                    <small>
+                        PCs listas para trabajar con eficiencia, estabilidad y bajo consumo energético.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/gamer.webp" alt="Computadoras gamer" />
+                <div>
+                    <strong>PCs Gamer</strong>
+                    <small>
+                        Equipos con procesadores de última generación, tarjetas gráficas dedicadas y periféricos de alto rendimiento.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/dev.webp" alt="PCs para programadores" />
+                <div>
+                    <strong>Estaciones para Programadores y Diseñadores</strong>
+                    <small>
+                        Computadoras optimizadas para desarrollo de software, diseño gráfico y edición multimedia.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/partes.webp" alt="Partes y componentes" />
+                <div>
+                    <strong>Partes y Componentes</strong>
+                    <small>
+                        Venta de placas de video, discos SSD, memoria RAM, fuentes, gabinetes y más para mejorar tu PC.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/keyboard.webp" alt="Accesorios" />
+                <div>
+                    <strong>Accesorios</strong>
+                    <small>
+                        Monitores, teclados, mouse, sillas gamer y todo lo que necesitas para completar tu experiencia.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/icon-asesor.webp" alt="Asesoría personalizada" />
+                <div>
+                    <strong>Asesoría Personalizada</strong>
+                    <small>
+                        Te ayudamos a elegir la PC o los componentes ideales según tu necesidad y presupuesto.
+                    </small>
+                </div>
+            </li>
+        </ul>
+
+        <div class="cta-container">
+            <a (click)="abrirWhatsApp()" class="cta-button">Cotizar mi equipo</a>
+        </div>
+    </section>
+</section>
+
+<div class="carusel-servicio">
+    <app-carusel [items]="imagenesComputadoras"></app-carusel>
+</div>

@@ -1,0 +1,345 @@
+
+/* ====== Desktop (≥1024px) ====== */
+
+
+  .buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+
+  .buttons-home{
+      background-color: #0b70b7;
+      border: 2px solid #0b70b7;
+      color: #FFF;
+      padding: 10px 20px;
+      font-size: 1.25rem;
+      border-radius: 30px 10px 30px 10px; 
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 0 10px;
+      text-decoration: none;
+      text-align: center;
+      width: 25%;
+      font-weight: 600;
+      
+  }
+
+  .buttons-home:hover {
+      background-color: #0b70b7;
+      border: 2px solid #fff;
+  }
+
+  .fullscreen-gif {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+@keyframes Animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+  .text{
+    animation: Animation 10s ease infinite;
+    background: linear-gradient(-45deg, #7c97d1, #4989ff, #0400ff, #030170);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 25vh;
+    margin-top: 10px;
+    background-color:#13131359;
+    text-align: center;  
+      
+  }
+  .text p{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FFF;
+    padding-top: 30px;
+  }
+
+  .card-content h2 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px 0 20px 0;
+    background: linear-gradient(90deg,#0b70b7,#818181);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .card-content h3{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+  }
+  
+  .card-content p {
+    width: 90%;
+    font-size: 1.5rem;
+    color: #0a0a0a;
+    text-align: center;
+    line-height: 2;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgb(230, 228, 228);
+    padding: 50px;
+    box-shadow: 9px 10px 10px 0px rgba(0, 0, 0, 0.79);
+  }
+
+  .horizontal-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 70px 0 70px;
+  }
+
+  .horizontal-list img{
+    width: 180px;
+    height: 90px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+.cta-button {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #4dafff, #4c00ff);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.benefits-container {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.benefit-item {
+  width: 30%;
+  background-color: rgb(230, 228, 228);
+  box-shadow: 0 6px 15px rgba(77, 77, 77, 0.541);
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-item img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.benefit-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.benefit-item p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.carousel-container {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #6d6d6d;
+  margin-top: 50px;
+  width: 90%;                   /* Más espacio para los items */
+  padding: 20px;
+  box-shadow: 9px 10px 10px 0px rgba(0, 0, 0, 0.79);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
+  width: 100%;
+}
+
+.card-logo {
+  width: 180px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.separador{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+
+/* ====== Tablet (768px - 1023px) ====== */
+@media (min-width: 768px) and (max-width: 1023px){
+
+.benefits-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.benefit-item {
+  width: 30%;
+}
+
+.benefit-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.benefit-item p {
+  font-size: 1rem;
+}
+
+.carousel-container {
+  width: auto;
+  padding: 10px;
+  height: 180px;
+  margin-top: 30px;
+  
+}
+
+
+
+}
+
+/* ====== Base: Mobile (0 - 767px) ====== */
+@media screen and (max-width: 767px) {
+  .text{
+    height: 20vh;
+  }
+  .text p{
+    font-size: 2rem;
+  }
+  .card-content h2 { 
+    font-size: 1.5rem;
+  }
+  .card-content h3{
+    font-size: 1rem;
+  }
+  
+  .card-content p {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+  }
+.cta-button {
+  
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefit-item {
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.benefit-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.benefit-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.benefit-item p {
+  font-size: 1rem;
+}
+
+.carousel-container {
+  
+  margin-top: 20px;
+
+}
+
+.carousel-track {
+
+  width: 90%;
+}
+
+.fullscreen-gif {
+  height: auto;
+  
+}
+}
+
+
+
+
+
+
+
+
+
+

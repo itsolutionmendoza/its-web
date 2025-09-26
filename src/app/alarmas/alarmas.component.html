@@ -1,0 +1,90 @@
+<section class="alarmas-container">
+
+    <div class="title-content">
+        <h2>Sistemas de Alarmas</h2>
+    </div>
+
+
+    <!-- HTML: sección "Qué ofrecemos" -->
+    <section class="section">
+        <div class="text-content">
+            <h3>¿Qué ofrecemos?</h3>
+            <p>
+                Ofrecemos una amplia gama de sensores, centrales y sirenas para proteger tu hogar o negocio.
+                Nuestras alarmas cuentan con tecnología avanzada, incluyendo notificaciones en tiempo real y
+                activacion de zonas de manera remota.</p>
+        </div>
+
+        <ul class="qs-features" role="list">
+            <li>
+                <img src="../../assets/img/ia.webp" alt="Analítica con IA" />
+                <div>
+                    <strong>Alertas Inteligentes</strong>
+                    <small>
+                        Robo, asalto, emergencia médica, incendio y asistencia a mujer.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/911.webp" alt="911" />
+                <div>
+                    <strong>Botón 911</strong>
+                    <small>
+                        Llame al 911 ante cualquier situación de emergencia.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/video-camara.webp" alt="video verificacion" />
+                <div>
+                    <strong>Video Verificación</strong>
+                    <small>
+                        Se pueden integras con sistemas de video seguridad para una respuesta más rápida y efectiva.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/historial.webp" alt="Estado y movimientos" />
+                <div>
+                    <strong>Estado y Movimientos</strong>
+                    <small>
+                        Visualice en tiempo real el estado de su alarma y acceda al historial de eventos.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/funciones.webp" alt="funciones especiales" />
+                <div>
+                    <strong>Funciones Especiales</strong>
+                    <small>
+                        Anti entradera, encendido de luces, confirmación de intrusión, alertas con geolocalización y
+                        auto armado.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/urbano.webp" alt="Escenarios de aplicación" />
+                <div>
+                    <strong>Escenarios de aplicación</strong>
+                    <small>
+                        Implementamos sistemas de seguridad adaptados a entornos residenciales, comerciales e
+                        industriales.
+                        Cada proyecto se diseña de forma personalizada según tus necesidades.
+                    </small>
+                </div>
+            </li>
+
+
+        </ul>
+
+
+        <div class="cta-container">
+            <a (click)="abrirWhatsApp()" class="cta-button">Solicitar asesoría gratuita</a>
+        </div>
+    </section>
+
+    <div class="carusel-servicio">
+        <app-carusel [items]="imagenesAlarmas"></app-carusel>
+    </div>
+
+</section>

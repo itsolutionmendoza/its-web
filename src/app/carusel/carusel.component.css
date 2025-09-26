@@ -1,0 +1,101 @@
+
+/* ====== Desktop (≥1024px) ====== */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* evita que se vea gigante en pantallas grandes */
+  margin: 0 auto;
+  margin-top: 150px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  z-index: -1;
+}
+
+.carousel-slide {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  /*object-fit: cover;  aprovecha mejor el espacio */
+  display: block;
+}
+
+/* Botones de control */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border: none;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* Indicadores */
+.indicators {
+  text-align: center;
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+}
+
+.indicators span {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 3px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.indicators span.active, 
+.indicators span:hover {
+  background-color: #717171;
+}
+
+
+
+/* ====== Tablet (768px - 1023px) ====== */
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+/* ====== Base: Mobile (0 - 767px) ====== */
+@media screen and (max-width: 767px) {
+  .carousel-container {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .carousel-slide {
+  width: 100%;
+  height: auto;
+}
+
+
+  
+}

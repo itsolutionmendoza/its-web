@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px 20px;
+    /*position: fixed;*/
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    /*background-color: #2c3b4b63;*/
+    height: 10vh;
+}
+
+
+.logo img {
+  height: 75px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+
+.nav-links li {
+  margin-left: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Añadir estilo para el enlace activo */
+.active-link {
+  border-bottom: 1px solid #000;
+  /* Puedes ajustar el color y el grosor de la línea según sea necesario */
+}
+
+/* Estilo adicional para la navegación */
+.navbar .nav-link {
+  padding: 5px;
+  color: #0B70B7;
+  /* Ajusta el color según sea necesario */
+  position: relative;
+  transition: color 0.3s ease;
+  /* Transición para el efecto de línea */
+}
+
+.navbar .nav-link.active-link {
+  color: #000000;
+  /* Color del enlace activo */
+}
+
+
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar .nav-link.active-link::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  /* debajo del item */
+  background: #FFFFFF;
+  min-width: 180px;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+  display: block;
+  color: #0B70B7;
+}
+
+.dropdown-menu li a:hover {
+  background: #0B70B7;
+  color: #ffffff;
+}
+
+/* Mostrar el menú al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+
+
+
+/*--- Keyframes ---*/
+
+@keyframes swell {
+
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+@keyframes blinkAnim {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fondo-movimiento {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* --- Fin Keyframe --- */
+
+
+/* ====== Desktop (≥1024px) ====== */
+
+
+
+
+/* ====== Tablet (768px - 1023px) ====== */
+@media (min-width: 768px) and (max-width: 1023px){
+
+
+
+
+
+}
+
+/* ====== Base: Mobile (0 - 767px) ====== */
+@media screen and (max-width: 767px) {
+
+  .logo img {
+    height: 60px;
+  }
+  .nav-links {
+    position: absolute;
+    top: 10vh; /* debajo de la navbar */
+    right: 0;
+    height: calc(100vh - 10vh);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #ebebeb;
+    transform: translateX(100%); /* escondido */
+    transition: transform 0.3s ease-in-out;
+    padding-top: 30px;
+  }
+
+  .nav-links.nav-active {
+  transform: translateX(0); /* visible */
+}
+
+  .burger span{
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+  /* cuando está activo */
+  .nav-links.nav-active {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+
+  .burger {
+    display: flex;
+    z-index: 200;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  /* ocultar las líneas al mostrar la X */
+  .burger .hidden {
+    display: none;
+  }
+
+  .close-btn {
+    font-size: 4rem;
+    color: rgb(46, 46, 46);
+    margin-right: 30px;
+  }
+
+  .line{
+    color: #000000;
+    font-size: 3rem;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+
+}
+
+

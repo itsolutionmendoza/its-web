@@ -1,0 +1,107 @@
+<!-- -->
+<!--Section: Texto --->
+
+<section class="text">
+  <p class="titulo-cambiante">Contamos con la última tecnología para tu <br>
+    <span class="word">{{ wordWrapperContent }}</span>
+  </p>
+</section>
+
+<div class="fullscreen-gif">
+  <app-carusel class="carusel" [items]="slides"></app-carusel>
+</div>
+
+
+
+<section class="why-choose-us">
+
+<div class="card-content">
+  <h2>¿Por Qué Elegirnos?</h2>
+</div>
+
+  <div class="benefits-container">
+    <div class="benefit-item">
+      <img src="../../assets/img/icon-service.png" alt="Servicio técnico" />
+      <h3>Servicio técnico a domicilio</h3>
+      <p>Resolución rápida y cómoda sin que te muevas de tu casa u oficina.</p>
+    </div>
+
+    <div class="benefit-item">
+      <img src="../../assets/img/icon-garantia.png" alt="Garantía" />
+      <h3>Trabajos con garantía</h3>
+      <p>Confianza y respaldo en cada reparación o instalación realizada.</p>
+    </div>
+
+    <div class="benefit-item">
+      <img src="../../assets/img/icon-asesor.png" alt="Asesoramiento" />
+      <h3>Asesoramiento sin cargo</h3>
+      <p>Presupuestos claros y asesoría gratuita para tomar la mejor decisión.</p>
+    </div>
+
+    <div class="benefit-item">
+      <img src="../../assets/img/icon-pay.png" alt="Medios de pago" />
+      <h3>Todos los medios de pago</h3>
+      <p>Pagá como prefieras: efectivo, tarjetas, transferencias y más.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="card-content">
+  <h2>Servicios Especializados</h2>
+</div>
+
+<div class="benefits-container">
+  <div class="benefit-item">
+    <img src="../../assets/img/cctv-icono.webp" alt="computer-support" />
+    <h3>Seguridad Electrónica</h3>
+    <p>Instalación y configuración de sistemas de seguridad electrónica.                                                       </p>
+    <button class="cta-button" routerLink="/camaras">Ver mas</button>
+  </div>
+  <div class="benefit-item">
+    <img src="../../assets/img/computacion-icono.webp" alt="">
+    <h3>Servicio Técnico</h3>
+    <p>Mantenimiento, reparación y actualización de equipos informáticos para garantizar su máximo rendimiento.</p>
+    <button class="cta-button" routerLink="/service-pc">Ver mas</button>
+  </div>
+  <div class="benefit-item">
+    <img src="../../assets/img/redes-icono.webp" alt="">
+    <h3>Redes y Conectividad</h3>
+    <p>Diseño e implementación de redes seguras, escalables y confiables para empresas y usuarios particulares.</p>
+    <button class="cta-button" routerLink="/redes">Ver mas</button>
+  </div>
+</div>
+
+<div class="card-content">
+  <h2>Sobre Nosotros</h2>
+</div>
+<div class="card-content">
+  <p>
+    Somos una <strong>empresa informática</strong> ubicados en la <strong>provincia de Mendoza,</strong> dedicada a brindar <strong>soluciones tecnológicas e
+      integrales</strong> a comercios, empresas y profesionales que buscan optimizar su rendimiento y mantenerse a la
+    vanguardia.<br>
+
+  Nuestro objetivo es convertir la tecnología en una <strong>herramienta estratégica para tu crecimiento.</strong>
+    Para ello, ofrecemos un <strong>servicio personalizado, confiable y eficiente,</strong> respaldado por un equipo con
+    amplia experiencia.
+  </p>
+
+</div>
+
+<div class="card-content">
+  <h2>Marcas Que Nos Respaldan</h2>
+</div>
+
+<div class="carousel-container">
+  <div class="carousel-track" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+    <ng-container *ngFor="let logo of logosMarcas">
+      <img class="card-logo" [src]="logo.img" alt="Logo de {{ logo.name }}">
+    </ng-container>
+  </div>
+</div>
+
+<div class="separador">
+
+</div>
+

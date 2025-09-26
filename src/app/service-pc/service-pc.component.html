@@ -1,0 +1,73 @@
+<section class="service-container">
+
+    <div class="title-content">
+        <h2>Servicio Técnico de Computadoras</h2>
+    </div>
+
+    <section class="section">
+        <div class="text-content">
+            <h3>¿Qué ofrecemos?</h3>
+            <p>
+                Brindamos soluciones integrales de servicio técnico para computadoras de escritorio y notebooks. 
+                Desde la reparación de hardware hasta la optimización de software, nuestro objetivo es que tus 
+                equipos funcionen siempre al máximo rendimiento, garantizando seguridad y confiabilidad en cada uso.
+            </p>
+        </div>
+
+        <ul class="qs-features" role="list">
+            <li>
+                <img src="../../assets/img/service-pc.webp" alt="Reparación de hardware" />
+                <div>
+                    <strong>Reparación de Hardware</strong>
+                    <small>
+                        Diagnóstico y cambio de componentes dañados: motherboards, discos, memorias, fuentes, pantallas y más.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/optimizar.webp" alt="Optimización de software" />
+                <div>
+                    <strong>Optimización de Software</strong>
+                    <small>
+                        Instalación de sistemas operativos, limpieza de virus y configuración de programas para mejorar el rendimiento.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/mantenimiento.webp" alt="Mantenimiento preventivo" />
+                <div>
+                    <strong>Mantenimiento Preventivo</strong>
+                    <small>
+                        Limpieza interna, cambio de pasta térmica y chequeo general para prolongar la vida útil de tus equipos.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/recuperar.webp" alt="Respaldo de datos" />
+                <div>
+                    <strong>Respaldo y Recuperación de Datos</strong>
+                    <small>
+                        Copia y recuperación de información importante en casos de fallas o pérdidas inesperadas.
+                    </small>
+                </div>
+            </li>
+            <li>
+                <img src="../../assets/img/icon-asesor.webp" alt="Asesoría personalizada" />
+                <div>
+                    <strong>Asesoría Personalizada</strong>
+                    <small>
+                        Te guiamos en la compra, actualización o configuración de equipos según tus necesidades específicas.
+                    </small>
+                </div>
+            </li>
+        </ul>
+
+        <div class="cta-container">
+            <a (click)="abrirWhatsApp()" class="cta-button">Solicitar servicio ahora</a>
+        </div>
+    </section>
+</section>
+
+<div class="carusel-servicio">
+    <app-carusel [items]="imagenesService"></app-carusel>
+</div>
