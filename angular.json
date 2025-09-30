@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/itsolutions-web",
+            "outputPath": "dist/itsolutions-web/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -92,6 +92,59 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/itsolutions-web/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "itsolutions-web:build:development",
+              "serverTarget": "itsolutions-web:server:development"
+            },
+            "production": {
+              "browserTarget": "itsolutions-web:build:production",
+              "serverTarget": "itsolutions-web:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "itsolutions-web:build:production",
+              "serverTarget": "itsolutions-web:server:production"
+            },
+            "development": {
+              "browserTarget": "itsolutions-web:build:development",
+              "serverTarget": "itsolutions-web:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

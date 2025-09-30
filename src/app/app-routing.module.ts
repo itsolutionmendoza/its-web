@@ -24,9 +24,11 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    scrollPositionRestoration: 'enabled', // 👈 vuelve al top en cada navegación
-    anchorScrolling: 'enabled'            // opcional: permite usar fragmentos (#id)
-  })],
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled' // opcional: permite usar fragmentos (#id)
+    ,
+    initialNavigation: 'enabledBlocking'
+})],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

@@ -38,7 +38,7 @@ import { VentasComponent } from './ventas/ventas.component';
     VentasComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
